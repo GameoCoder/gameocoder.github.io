@@ -11,3 +11,7 @@ app.use('/api/auth', authRoutes);
 app.get('/', (req,res) => {
 	res.send('Student Login System Backend is running.');
 });
+
+app.listen(PORT, () => {
+	console.log(`Server running on http://localhost:${PORT}`);
+});
